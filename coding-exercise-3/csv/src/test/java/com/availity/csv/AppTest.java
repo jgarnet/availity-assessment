@@ -95,7 +95,9 @@ public class AppTest {
         App app = new App(reader, writer);
         app.process("test");
         Enrollment enrollment = writer.getCalls().get(0).getValues().get(0);
+        int size = writer.getCalls().get(0).getValues().size();
         assertEquals("Duplicate is removed in favor of highest version", 2, enrollment.getVersion());
+        assertEquals("There should only be one element in the .CSV", 1, size);
     }
 
 }
