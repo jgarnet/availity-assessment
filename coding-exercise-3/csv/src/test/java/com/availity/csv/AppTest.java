@@ -71,9 +71,9 @@ public class AppTest {
         App app = new App(reader, writer);
         app.process("test");
         List<Enrollment> enrollments = writer.getCalls().get(0).getValues();
-        assertEquals("First element is Adam Johnson", "1", enrollments.get(1).getUserId());
-        assertEquals("Second element is Laura Johnson", "2", enrollments.get(2).getUserId());
-        assertEquals("Third element is Tom Hanks", "3", enrollments.get(0).getUserId());
+        assertEquals("First element is Tom Hanks", "3", enrollments.get(0).getUserId());
+        assertEquals("Second element is Adam Johnson", "1", enrollments.get(1).getUserId());
+        assertEquals("Third element is Laura Johnson", "2", enrollments.get(2).getUserId());
     }
 
     @Test
