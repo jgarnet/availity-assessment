@@ -1,8 +1,10 @@
 # CSV Solution
 
-This example assumes the CSV file format (input & outputs) will match:
+This solution assumes the CSV file format (input & outputs) will match:
 
 ### `User Id, First Name, Last Name, Version, Insurance Company`
+
+This solution also assumes the CSV file will contain a "Headings" row with the column names.
 
 To run the solution, execute `run.sh`. 
 
